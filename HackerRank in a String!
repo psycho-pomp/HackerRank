@@ -1,0 +1,6 @@
+def hackerrankInString(s):
+    for i in 'hackerrank':
+        if i in s:
+            s=s[s.index(i)+1:]
+        else: return 'NO'
+    return 'YES'
