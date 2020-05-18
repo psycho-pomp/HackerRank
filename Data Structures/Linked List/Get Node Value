@@ -1,0 +1,12 @@
+temp=head
+    c=0
+    while temp:
+        c+=1
+        temp=temp.next
+    pos=c-positionFromTail-1
+    x=0
+    while head:
+        if x==pos:
+            return head.data
+        x+=1
+        head=head.next
