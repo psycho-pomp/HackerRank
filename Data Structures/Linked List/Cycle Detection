@@ -1,0 +1,8 @@
+def has_cycle(head):
+    c=0
+    while head:
+        if c>llist_count:
+            return 1
+        c+=1
+        head=head.next
+    return 0
