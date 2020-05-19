@@ -1,0 +1,23 @@
+node = DoublyLinkedListNode(data)
+
+    if head.data > data :
+        node.next = head
+        return node
+
+    temp , prev = head, head
+    while temp :
+        if temp.data>data:
+            break
+        prev = temp
+        temp = temp.next
+      
+    if temp is None:
+        prev.next = node
+        node.prev = prev
+        return head
+    else:
+        prev.next = node
+        node.prev = prev
+        node.next = temp
+  
+    return head
